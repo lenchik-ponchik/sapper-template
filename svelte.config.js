@@ -6,16 +6,6 @@ const preprocessConfig = {
   pug: true
 };
 
-const clientConfig = {
-  preprocess: autoPreprocess(preprocessConfig),
-  dev,
-  hydratable: true,
-  emitCss: true
+module.exports = {
+  preprocess: autoPreprocess(preprocessConfig)
 };
-
-const serverConfig = {
-  preprocess: autoPreprocess(preprocessConfig),
-  generate: "ssr",
-  dev
-};
-module.exports = clientConfig;

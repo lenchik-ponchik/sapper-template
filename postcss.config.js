@@ -1,6 +1,6 @@
 module.exports = {
-  // syntax: "postcss-scss",
-  // parser: "postcss-scss",
+  syntax: "postcss-scss",
+  parser: "postcss-scss",
   extract: true,
   sourceMap: false,
   plugins: [
